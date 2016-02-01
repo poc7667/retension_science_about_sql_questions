@@ -20,7 +20,7 @@ You can get expected results after having prepared sample data in DB
 
 ![inline](https://i.imgur.com/t53yu4F.png=300x "Title")
  
-# Count the days for the next event
+# Problem1: Count the days for the next event
 
 Idea: Use `subquery` to get the next event and call the datediff FUNC to get the day difference
 
@@ -57,9 +57,11 @@ Idea: Use `subquery` to get the next event and call the datediff FUNC to get the
        FROM events e ) e
     WHERE next_dt IS NOT NULL;
 
-# Find the customers who haven't make any order
+# Problem2: Find the customers who haven't make any order
 
 Idea: use `left join` to get the difference set, please see my handwirting illustration.
+
+![inline](https://i.imgur.com/koG30WK.png=300x "Title")
 
 ## Whole SQL expression
 
