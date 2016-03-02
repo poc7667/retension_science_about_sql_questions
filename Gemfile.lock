@@ -168,6 +168,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   faker
   forgery (= 0.6.0)
+  hirb
   hirb-unicode
   jbuilder (~> 2.0)
   jquery-rails
