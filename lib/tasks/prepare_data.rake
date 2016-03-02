@@ -33,4 +33,12 @@ namespace :prepare_data do
     end
   end
 
+  task :ownerless_oders => :environment do
+    (1..3).each do
+      Order.create(
+        amount: (100..1000).to_a.sample
+      )
+    end
+  end
+
 end
